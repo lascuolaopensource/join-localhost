@@ -1,0 +1,193 @@
+@import "variables";
+
+
+.text-magenta {
+  color: $magenta;
+}
+.text-green {
+  color: $acid-green;
+}
+.text-cyan {
+  color: $cyan;
+}
+.text-blue {
+  color: $blue;
+}
+
+.text-color-primary {
+  color: $sos-primary;
+}
+.text-color-secondary {
+  color: $sos-secondary;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-upper-bold {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.input-group-list {
+  margin-top: 10px;
+  li {
+    &:not(:last-child) {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    .input-group-addon {
+      background-color: $sos-primary;
+      color: white;
+      font-weight: bold;
+      border-radius: 0;
+      border: 0;
+    }
+    .input-group-addon, .btn {
+      padding: 4px 12px;
+      font-size: 12px;
+    }
+  }
+
+  &.bg-black {
+    .input-group-addon {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  &.compact {
+    li {
+      &:not(:last-child) {
+        margin-right: 6px;
+        margin-bottom: 4px;
+      }
+      .input-group-addon, .btn {
+        padding: 3px 8px;
+      }
+    }
+  }
+}
+
+
+.sos-icon.shaded, .badge.badge-shaded, .skill-request {
+  opacity: .7;
+}
+
+
+.alert {
+  &.alert-black {
+    @include alert-variant(black, $gray-dark, white);
+    button.close {
+      span {
+        text-shadow: none;
+        color: white;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+
+.btn {
+  &.btn-sos-doubled-blue {
+    @include button-sos-doubled-variant($blue, $magenta, white);
+  }
+
+  &.btn-sos-dotted-magenta {
+    @include button-sos-dotted-variant(black, $magenta);
+  }
+
+  &.btn-sos-magenta {
+    @include button-sos-variant(white, $magenta, $magenta, white);
+  }
+
+  &.btn-sos-magenta-invert {
+    @include button-sos-variant($magenta, white, white, $magenta);
+  }
+
+  &.btn-black {
+    @include button-variant(black, black, white, black, white, black);
+  }
+  &.btn-outline-black {
+    @include button-outline-variant(black);
+  }
+  &.btn-white {
+    $bg: white;
+    @include button-variant($bg, $bg, darken($bg, 7.5%), darken($bg, 10%), black, darken($bg, 10%));
+  }
+}
+
+
+.card {
+  &.card-outline-primary {
+    @include card-outline-variant($sos-primary);
+  }
+  &.card-outline-secondary {
+    @include card-outline-variant($sos-secondary);
+  }
+}
+
+
+.badge {
+  border-radius: 0;
+  &.badge-magenta {
+    @include badge-variant($magenta);
+  }
+}
+
+
+.list-fingers {
+  @include list-unicode('\261b');
+}
+.list-checks {
+  @include list-unicode('\2713');
+}
+.list-hearts {
+  @include list-unicode('\2665');
+}
+.list-arrows {
+  @include list-unicode($right-arrow);
+}
+
+
+@each $state, $color in $validation-states {
+  @include fix-form-check-validation($state, $color);
+}
+
+
+@each $alert-name, $color in $sos-alerts {
+  .alert-#{$alert-name} {
+    $text-color: map-get($sos-alerts-color, $alert-name);
+    @include alert-variant($color, theme-color-level($alert-name, -9), $text-color);
+  }
+}
+
+
+.form-control {
+  border: 2px solid black;
+  background-color: transparent;
+  border-radius: 0;
+  color: inherit;
+  &:focus {
+    background-color: transparent;
+    border-color: black;
+    color: inherit;
+  }
+}
+
+
+.finger:after {
+  content: '\261b';
+}
+.heart:after {
+  content: '\2665';
+}
+.checks:after {
+  content: '\2713';
+}
+.right-arrow:after {
+  content: $right-arrow;
+}

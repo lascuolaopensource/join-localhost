@@ -1,0 +1,35 @@
+{
+  "name": "@sos/sos-ui-shared",
+  "version": "1.0.0",
+  "description": "Shared UI components for SOS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acidghost/sos-ui-shared.git"
+  },
+  "private": true,
+  "author": "Andrea Jemmett",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "^4.1.0",
+    "@angular/compiler": "^4.1.0",
+    "@angular/core": "^4.1.0",
+    "@angular/forms": "^4.1.0",
+    "@angular/http": "^4.1.0",
+    "@angular/platform-browser": "^4.1.0",
+    "@angular/platform-browser-dynamic": "^4.1.0",
+    "@angular/router": "^4.1.0",
+    "bootstrap": "4.1.0",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.14.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "@types/node": "~6.0.60",
+    "typescript": "~2.1.0"
+  }
+}
