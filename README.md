@@ -28,8 +28,9 @@ You need to add these lines to your `hosts` file:
         127.0.0.1 admin-frontend
         127.0.0.1 backend
 
-On Linux and Mac you can find it in `/etc/hosts`
-On Windows you can find it in `C:\Windows\System32\drivers\etc\hosts`
+On Linux and Mac you can find it in `/etc/hosts`.
+
+On Windows you can find it in `C:\Windows\System32\drivers\etc\hosts`.
 
 ### Build
         
