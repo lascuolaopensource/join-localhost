@@ -1,6 +1,6 @@
 
 APPLICATION_SECRET=cambiata
-JDBC_DATABASE_URL=jdbcjdbc:postgresql://localhost:5432/gestionale
+JDBC_DATABASE_URL=jdbc:postgresql://localhost:5432/gestionale
 JDBC_DATABASE_USER=admin
 JDBC_DATABASE_PASSWORD=12345678
 ADMIN_URL=http://localhost:1235/
@@ -14,6 +14,6 @@ BRAINTREE_MERCHANT_ID=z2trthxjsb7hwkfx
 BRAINTREE_PUBLIC_KEY=y2v8jsg2735nh3kq
 BRAINTREE_PRIVATE_KEY=e15ace23356d056f73f21394dfc170bf
 BRAINTREE_ENVIRONMENT=sandbox
-MAILER_HOST=info@lascuolaopensource.xyz
-MAILER_USER=admin
+MAILER_HOST=mail.example.com
+MAILER_USER=mail@example.com
 MAILER_PASS=12345678

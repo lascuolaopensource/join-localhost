@@ -24,7 +24,7 @@ export const environment = {
     backendUrl: '${BACKEND_URL}',
     rulesUrl: '${RULES_URL}',
     auth: {
-      clientId: 'user',
+      clientId: 'admin',
       redirectUri: 'auth.html',
       authUrl: '${AUTH_URL}',
       logoutUrl: '${LOGOUT_URL}'

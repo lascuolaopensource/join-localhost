@@ -1,0 +1,5 @@
+ENVIRONMENT=production
+BACKEND_URL=http://localhost:9000/api
+RULES_URL=http://localhost:9000/rules
+AUTH_URL=http://localhost:9000/oauth2/access_token
+LOGOUT_URL=http://localhost:9000/signout
