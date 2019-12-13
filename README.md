@@ -1,5 +1,5 @@
 # Join Localhost
-## Local development edition
+## local development edition
 
 Gestionale per nuove istituzioni
 
@@ -16,7 +16,7 @@ Rename `env-example` to `.env` in main folder, `join-frontend` and `join-admin-f
 
         mv env-example .env
         mv join-frontend/env-example join-frontend/.env
-        mv join-frontend/env-example join-admin-frontend/.env
+        mv join-admin-frontend/env-example join-admin-frontend/.env
 
 If you want to change addresses or ports check out variables in those files. Be sure to match 'em in `docker-compose.yml` too.
 
